@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    {{>navbar}}
+   <div class="temp_values">
+     <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form class="temp_form">
+                        <input style="padding: 1.6rem;" type="text" id="cityname" placeholder="Enter your city name" autocomplete="off">
+                        <input style="padding: 4px;" type="submit" value="search" id="submitbtn">
+                    </form>
+
+                </div>
+                <div class="tempinfo">
+                    <div class="top_layer">
+                        <p style="font-size: 25px;" id="day">Tuesday</p>
+                        <p style="font-size: 25px;" id="today_day">13 oct</p>
+                    </div>
+                    <div class="main_layer">
+                        <p style="font-size: 25px;" id="city_name">Get output here</p>
+                        <div class="middle_layer data_hide">
+                            <div style="font-size: 25px;" id="temp"><span>0</span> <span>0</span>C</div>
+                            <p style="font-size: 25px;" id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+<script src="js/main.js"></script>
+</body>
+
+
+</html>
